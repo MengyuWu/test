@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="simpleapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHh-3u-u6H">
+                                <rect key="frame" x="277" y="540" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G2s-ln-3Vq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56F-f4-pOf">
+                                <rect key="frame" x="277" y="135" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NJ4-PE-dFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNK-3K-93z">
+                                <rect key="frame" x="0.0" y="145" width="600" height="300"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="56F-f4-pOf" firstAttribute="leading" secondItem="eHh-3u-u6H" secondAttribute="leading" id="4l0-N8-Im9"/>
+                            <constraint firstAttribute="trailing" secondItem="SNK-3K-93z" secondAttribute="trailing" id="Pk4-5q-TzJ"/>
+                            <constraint firstItem="eHh-3u-u6H" firstAttribute="top" secondItem="SNK-3K-93z" secondAttribute="bottom" constant="95" id="RYz-Zm-qfK"/>
+                            <constraint firstItem="eHh-3u-u6H" firstAttribute="centerX" secondItem="SNK-3K-93z" secondAttribute="centerX" id="Ttu-EK-E29"/>
+                            <constraint firstItem="SNK-3K-93z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="125" id="cSs-he-Mhg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eHh-3u-u6H" secondAttribute="bottom" constant="30" id="ie7-D6-UzI"/>
+                            <constraint firstItem="SNK-3K-93z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="kUt-nP-ILS"/>
+                            <constraint firstItem="56F-f4-pOf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="115" id="nRb-uE-aCW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="56F-f4-pOf" id="dCf-Se-vKD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
